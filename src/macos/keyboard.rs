@@ -91,6 +91,7 @@ impl Keyboard {
         code: u32,
         modifier_state: ModifierState,
     ) -> Option<String> {
+        return None;
         let mut keyboard = TISCopyCurrentKeyboardInputSource();
         let mut layout = TISGetInputSourceProperty(keyboard, kTISPropertyUnicodeKeyLayoutData);
 
